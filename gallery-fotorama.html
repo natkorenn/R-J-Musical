@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>R | J  - Musical - Contact info</title>
+	<title>R | J  - Musical</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="musical, event, london, belfast, dublin, hip hop, troubles, 2019, october, november, december, northern, ireland, romeo, juliet, whats on, waterfront, gaiety, theatre, young vic, performance">
@@ -10,6 +10,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="CSS/style.css">
+	<!-- jQuery 1.8 or later, 33 KB -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Fotorama from CDNJS, 19 KB -->
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
 <body>
@@ -32,10 +38,6 @@
 			</ul>
 	</nav>
 
-	<a class="book" href="book.html">
-			Book
-		</a>
-
 	<!--<>-->
 	<div class="circle1"></div>
 	<div class="circle2"></div>	
@@ -46,34 +48,25 @@
 		</a>
 	</div>
 
-	<div class="container-contact">
+	<nav>
 
-		<div id="venues">
-			<div>
-				<a href="contactbelfast.html">BELFAST</a>
-			</div>
-			<div>
-				<a href="contactlondon.html">LONDON</a>
-			</div>
-			<div>
-				<a href="contactdublin.html">DUBLIN</a>
-			</div>
-		</div>
+		<a class="book" href="http://ticketmaster.com">
+			Book
+		</a>
+	</nav>
 
-		<div class="contactinfo">
-			<h1>
-				<p> Contact us:</p>
-			</h1>
-			<h2>
-				<p>info@r-jmusical.com</p>
-				<p>0200600666</p>
-			</h2>
-		</div>
-
+<div class="fotorama-container">
+	<div class="fotorama">
+	 	 <img class="gallery-fotorama" src="img1.jpeg">
+ 		 <img class="gallery-fotorama" src="img2.jpeg">
+ 		 <img class="gallery-fotorama" src="img3.jpeg">
+ 		 <img class="gallery-fotorama" src="img4.jpeg">
 	</div>
+</div>
+
 
 	<div class="newsletter-wrapper2">
-		<div class="socialmedia2">
+		<div>
 			<a href="http://www.facebook.com">
 			<img src="facebook.svg" alt="facebook"
 			style="width:62px;height:62px;border:0px;padding:5px">
@@ -92,22 +85,25 @@
 		<span class="newsletter">
 			SUBSCRIBE
 		</span>
+
+		
 	</div>
 
 	<div class="newsletter-modal">
-		<form action="action_page.php">
+			<form action="action_page.php">
 			<div class="container" style="background-color:black">
    				 <input type="text" placeholder="Name" name="name" required>
   				  <input type="text" placeholder="E-mail address" name="mail" required>
  			 </div>
 
- 			<div class="container">
-    			<input type="submit" value="Subscribe">
- 			</div>
-		</form> 
-	</div>
+ 			 <div class="container">
+    		<input type="submit" value="Subscribe">
+ 			 </div>
+			</form> 
+		</div>
 
 </body>
+
 </html>
 
 

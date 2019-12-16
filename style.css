@@ -110,7 +110,7 @@ img {
 .logo-book {
 	display: block;
 	margin: auto;
-	margin-top: -4%;
+	margin-top: -6%;
 	width: 190px;
 	height: 80px;
 }
@@ -118,7 +118,7 @@ img {
 @media (max-width: 375px) {
 	.logo-book {
 	    position: relative;
-	    left: 20vw;
+	    left: 30vw;
 	    top: -18vw;
 	    width: 150px;
 	    height: 50px;
@@ -157,9 +157,6 @@ img {
 nav {
 	text-align: center;
 }
-
-/*background-image: url(../net.png);
-background-repeat: no-repeat;*/
 
 .menu {
 	display: none;
@@ -306,8 +303,14 @@ nav ul {
 		margin-top: -10vw;
 		background-color: rgba(0,0,0,0.5);
 		padding: 30px;
-		text-align: center;
+		padding-bottom: 25vh;
 		color: #FFFFFF;
+	}
+}
+
+@media (max-width: 1280px) {
+	.wrapper {
+		padding-bottom: 80px;
 	}
 }
 
@@ -378,6 +381,13 @@ iframe {
 
 /*Contact us*/
 
+@media (max-width: 375px) {
+	.container-contact {
+	margin-top: -23vh;
+	padding-bottom: 300px;
+	}
+}
+
 #venues {
 	display: flex;
 	flex-wrap: wrap;
@@ -391,8 +401,13 @@ iframe {
 	#venues {
 	display: flex;
 	flex-direction: column;
-	margin-left: 20vh;
-	margin-top: 0vw;
+	margin-left: 25vh;
+	}
+}
+
+@media (max-width: 1366px) {
+	#venues {
+	margin-top: 20vh;
 	}
 }
 
@@ -450,7 +465,7 @@ color: rgba(255,255,255,1);
 	.contactinfo {
 	position: absolute;
 	display: inline-block;
-	left: 5%;
+	left: 7vh;
 	top: 83%;
 	line-height: 10px;
 	padding: 3px 30px 0px 40px;
@@ -459,7 +474,7 @@ color: rgba(255,255,255,1);
 }
 
 .contactinfo h1 {
-	font-family: Roboto;
+	font-family: Staatliches;
 	text-decoration: underline;
 	font-size: 30px;
 	font-weight: bold;
@@ -515,6 +530,13 @@ color: rgba(255,255,255,1);
 	}
 }
 
+@media (max-width: 1366px) {
+	.wrapper-contact {
+    min-width: 650px;
+}
+	}
+}
+
 .mapouter{
 	position:relative;
 	text-align:right;
@@ -548,6 +570,14 @@ color: rgba(255,255,255,1);
 	}
 }
 
+@media (max-width: 375px) {
+	.column1, .column2 {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	}
+}
+
 .column2 .logo-venue {
 	text-align: center;
 }
@@ -571,6 +601,8 @@ color: rgba(255,255,255,1);
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin: 0 auto;
 	margin-top: 5%;
 	background-color: rgba(0,0,0,0.3);
@@ -579,14 +611,22 @@ color: rgba(255,255,255,1);
 
 @media (max-width: 375px) {
 	.gallery-wrapper {
+	max-width: 100%;
+	margin-top: -2vh;
+	}
+}
+
+@media (max-width: 1366px) {
+	.gallery-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 100%;
+	flex-direction: row;
+	max-width: 65%;
+	padding: 10px;
 	margin: 0 auto;
-	margin-top: -10vw;
+	margin-top: 5%;
 	background-color: rgba(0,0,0,0.3);
 	justify-content: center;
-	}
 }
 
   .gallery {
@@ -595,6 +635,13 @@ color: rgba(255,255,255,1);
   	margin: 3px;
   }
 
+@media (max-width: 1366px) {
+	.gallery {
+	width: 375px;
+  	height: 230px;
+  	margin: 6px;
+	}
+}
 
 /*Cast and crew*/
 
@@ -602,7 +649,7 @@ color: rgba(255,255,255,1);
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	max-width: 50%;
 	margin: 0 auto;
 	margin-top: 30px;
@@ -641,6 +688,13 @@ color: rgba(255,255,255,1);
 	.cast {
 	width: 110px;
 	height: 140px;
+	}
+}
+
+@media (max-width: 1920px) {
+	.cast {
+	width: 110px;
+	height: 150px;
 	}
 }
 
@@ -685,7 +739,6 @@ color: rgba(255,255,255,1);
 	font-size: 1.25vw;
 	text-decoration: none;
 	color: black;
-	text-align: center;
 }
 
 @media (max-width: 375px) {
@@ -697,7 +750,14 @@ color: rgba(255,255,255,1);
 }
 
 .crew {
-  	margin: 40px;
+  	margin: 15px;
+  	margin-top: 3px;
+}
+
+.crew-wrap {
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .partners-grid {
@@ -726,7 +786,7 @@ color: rgba(255,255,255,1);
 	font-size: 1.25vw;
 	text-align: center;
 	width: 40%;
-	margin: 1px;
+	margin: 10px;
 }
 
  @media (max-width: 375px) {
@@ -767,6 +827,7 @@ color: rgba(255,255,255,1);
  @media (max-width: 375px) {
 	.booking-title {
 	font-size: 5vw;
+	margin-top: 2vh;
 	}
 }
 
@@ -796,10 +857,19 @@ color: rgba(255,255,255,1);
 
  @media (max-width: 375px) {
 	#booking-table div {
-	font-size: 15px;
+	font-size: 12px;
 	}
 }
 
+.linebreak {
+	display: none;
+}
+
+ @media (max-width: 375px) {
+	#linebreak {
+	display: inline-block;
+	}
+}
 
 #booking-table div a {
 	text-decoration: none;
@@ -831,10 +901,31 @@ color: rgba(255,255,255,1);
 	left: 33vw;
 }
 
+@media (max-width: 1366px) {
+	.arrow {
+	top: 33vh;
+	left: 30vw;
+	}
+}
+
+@media (max-width: 375px) {
+	.arrow {
+	top: 23vh;
+	left: 15vw;
+	}
+}
+
 .arrow-contact {
 	position: absolute;
 	top: 19vh;
 	left: 33vw;
+}
+
+@media (max-width: 375px) {
+	.arrow-contact {
+	top: 20vh;
+	left: 8vw;
+	}
 }
 
 /*Newsletter/Sign up*/
@@ -911,6 +1002,7 @@ color: rgba(255,255,255,1);
 
 @media (max-width: 375px) {
 	.newsletter-wrapper3  {
+	    position: fixed;
 	    top: 2%;
 	    width: 100%;
 	    left: 50%;
@@ -929,7 +1021,6 @@ color: rgba(255,255,255,1);
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
-
 
 
 @media (max-width: 375px) {
@@ -967,8 +1058,8 @@ color: rgba(255,255,255,1);
   
   	transform: translate(-50%, -50%);
 	
-	height: 45px;
-	width: 85px;
+	height: 36px;
+	width: 75px;
 	position: 0 auto;
 }
 
@@ -1084,4 +1175,22 @@ input[type=submit]:hover {
  width: 10px;
  border-radius: 5px;
  background-color: rgba(0,0,0,0.7);
+}
+
+/*Image gallery Fotorama JS slider*/
+
+.fotorama {
+ position: absolute;
+ display: flex;
+ align-items: center;
+ margin-top: 10vh;
+ left: 50vh;
+ height: 50%;
+ width: 50%;
+ background-size: contain;
+ background-position: center;
+}
+
+.gallery-fotorama {
+ justify-content: center;
 }
